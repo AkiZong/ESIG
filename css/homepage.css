@@ -429,7 +429,7 @@
 }
 
 i.facebook {
-    background: url('../picture/img-sprite.png') no-repeat 0px 0px;
+    background: url('../Images/img-sprite.png') no-repeat 0px 0px;
 	background-position: 0px 0px;
 }
 i.facebook:hover {
@@ -441,7 +441,7 @@ i.facebook:hover {
 	-ms-transition:0.5s all;
 }
 i.twitter {
-    background: url('../picture/img-sprite.png') no-repeat 0px 0px;
+    background: url('../Images/img-sprite.png') no-repeat 0px 0px;
 	background-position: -45px 0px;
 }
 i.twitter:hover {
@@ -453,7 +453,7 @@ i.twitter:hover {
 	-ms-transition:0.5s all;
 }
 i.linkedin {
-    background: url('../picture/img-sprite.png') no-repeat 0px 0px;
+    background: url('../Images/img-sprite.png') no-repeat 0px 0px;
 	background-position: -90px 0px;
 }
 i.linkedin:hover {

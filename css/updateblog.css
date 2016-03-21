@@ -1,0 +1,257 @@
+body {
+    background-color: #f5f5f5;
+}
+
+/* namebutton */
+.namebutton {
+    float:left;
+    margin-left: 9%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+}
+
+.namebutton a:link {
+    color: black;
+    text-decoration: none;
+}
+
+.namebutton a:visited {
+    color: black;
+}
+
+.namebutton a: hover {
+    color: #610B0B;
+}
+
+.namebutton a: active {
+    color: #610B0B;
+}
+
+/* navigation */
+.navigation {
+    margin-top: 30px;
+    margin-left: 45%;
+    margin-right: 9%;
+}
+
+.navigation ul {
+    margin-top: 22px;
+    margin-left: 70%;
+    position: left-side;
+}
+
+.navigation ul li {
+    display: inline;
+}
+
+.navigation li a {
+    padding: 2px;
+    text-decoration: none;
+    color: grey;
+}
+
+/* essay list */
+.essaylist {
+    background-color: white;
+    margin-top: 60px;
+    margin-left: 9%;
+    margin-right: 9%;
+    padding-top: 40px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.essaylist a:link {
+    color: #023456;
+    text-decoration: none;
+}
+
+.essaylist a:visited {
+    color: #023456; /* blue */
+    /*color: #B43104;   red */
+}
+
+.essaylist a: hover {
+    color: #610B0B;
+}
+
+.essaylist a: active {
+    color: #610B0B;
+}
+
+.essaylist a {
+    font-family: AppleGothic;
+    font-size: 25px;
+    font-style: normal;
+    font-variant: normal;
+}
+
+/* essay list text */
+/* essay */
+.essaylist h1 {
+    font-family: cursive;
+    font-size: 40px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 500;
+    line-height: 26px;
+}
+
+/* essay name (link)*/
+/* date */
+.essaylist h2 {
+    font-family: cursive;
+    font-size: 15px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 100;
+    line-height: 18px;
+    color: darkgrey;
+}
+
+/* summary */
+.essaylist h3 {
+    font-family: sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 100;
+    line-height: 20px;
+}
+
+.essaylist .readmore {
+    font-family: sans-serif;
+    font-size: 15px;
+    font-style: italic;
+    font-variant: normal;
+    font-weight: 100;
+    line-height: 16px;
+}
+
+/* table */
+.endessay table {
+    margin-left: 9%;
+    margin-right: 9%;
+    border-collapse: collapse;
+}
+
+.endessay table, th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+.endessay th {
+    font-family: cursive;
+    color: grey;
+}
+
+.endessay td a:link {
+    color: #023456;
+    text-decoration: none;
+}
+
+.endessay td a:visited {
+    color: #023456;
+}
+
+.endessay td a: hover {
+    color: #610B0B;
+}
+
+.endessay td a: active {
+    color: #610B0B;
+}
+
+.endessay .endessayname {
+    font-size: 18px;
+}
+
+.endessay h3 {
+    font-family: sans-serif;
+    font-size: 12px;
+    font-style: italic;
+    font-variant: normal;
+    font-weight: 100;
+    line-height: 16px;
+}
+
+.endessay .seeallessay {
+    font-family: sans-serif;
+    font-size: 12px;
+    font-style: italic;
+    font-variant: normal;
+    font-weight: 100;
+    line-height: 16px;
+}
+
+.line {
+    margin-left: 9%;
+    margin-right: 9%;
+    color: darkgrey;
+}
+
+/* bottom */
+.bottom table {
+    margin-left: 8%;
+    margin-right: 9%;
+    border-collapse: collapse;
+}
+
+.bottom table, th {
+    padding: 10px;
+    text-align: left;
+}
+
+/*essay */
+/* title */
+.essaylist h4 {
+    font-family: cursive;
+    font-size: 30px;
+    font-style: normal;
+    font-variant: normal;
+    line-height: 150%;
+}
+
+/* paragraph */
+.essaylist h5 {
+    font-family: sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 100;
+    line-height: 150%;
+}
+
+/* sub title */
+.essaylist h6 {
+    font-family: sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: bold;
+}
+
+/* add pic */
+.essaylist h7 {
+    font-family: sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 100;
+    line-height: 150%;
+    color: red;
+}
+
+/* key words */
+.essaylist h8 {
+    font-family: monaco, Consolas, 'Lucida Console', monospace;
+    font-size: 24px;
+    font-style: italic;
+    font-variant: normal;
+    font-weight: bold;
+    line-height: 26px;
+    color: #023456;
+}
+
+
+

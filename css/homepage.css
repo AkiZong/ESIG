@@ -1,0 +1,458 @@
+/* -----------------------------  main navigation ------------------------------ */
+.mainnavigation {
+    position: relative;
+    margin-top: 0px;
+}
+
+.mainnavigation .logonav {
+    position: absolute;
+    left: 20%;
+    top: 50%;
+}
+
+.mainnavigation .rightnav {
+    position: absolute;
+    left: 60%;
+    top: 50%;
+}
+
+
+/* ----------------------------- first part: big picture ------------------------------ */
+.firstpart {
+    position: relative;
+    margin-top: 50px;
+}
+                   /* ESIG */
+.firstpart p11 {
+    position: absolute;
+    left: 15%;
+    top: 30%;
+    padding: 10px;
+    width: 80%;
+    color: white;
+    margin: 5px;
+    font-family: 'Helvetica Neue';
+    font-size: 65px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: bold;
+    line-height: 26px;
+}
+                   /* simplified financial planning */
+.firstpart p12 {
+    position: absolute;
+    left: 30%;
+    top: 50%;
+    padding: 10px;
+    width: 80%;
+    color: white;
+    margin: 5px;
+    font-family: 'Arial Rounded MT Bold', 'Helvetica Rounded', Arial, sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 500;
+    line-height: 26px;
+}
+                   /* get started */
+.firstpart button {
+    position: absolute;
+    left: 45%;
+    top: 70%;
+    padding: 15px 32px;
+    width: 10%;
+    background-color: #194C7F;
+    border: none;
+    color: white;
+    font-size: 15px;
+}
+
+/* ----------------------------- second part: our services ------------------------------ */
+.secondpart {
+    position: relative;
+}
+                   /* our services */
+.secondpart p11 {
+    position: absolute;
+    left: 55%;
+    top: 20%;
+    padding: 10px;
+    width: 80%;
+    color: #023456;
+    margin: 5px;
+    font-family: 'Helvetica Neue';
+    font-size: 24px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: bold;
+    line-height: 26px;
+}
+
+.secondpart .servicepic {
+    position: absolute;
+    left: 20%;
+    top: 20%;
+    padding: 10px;
+    margin: 5px;
+}
+                   /* services intro */         
+.secondpart p12 {
+    position: absolute;
+    left: 55%;
+    top: 40%;
+    padding: 10px;
+    width: 30%;
+    color: #023456;
+    margin: 5px;
+    font-family: 'Helvetica Neue';
+    font-size: 18px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    line-height: 26px;
+}
+
+.secondpart button {
+    position: absolute;
+    left: 56%;
+    top: 70%;
+    padding: 15px 32px;
+    width: 10%;
+    background-color: #194C7F;
+    border: none;
+    color: white;
+    font-size: 15px;
+}
+
+
+/* ----------------------------- third part: our team ------------------------------ */
+.thirdpart {
+    position: relative;
+}
+                   /* our team */
+.thirdpart p11 {
+    position: absolute;
+    left: 20%;
+    top: 20%;
+    padding: 10px;
+    width: 80%;
+    color: #023456;
+    margin: 5px;
+    font-family: 'Helvetica Neue';
+    font-size: 24px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: bold;
+    line-height: 26px;
+}
+                   /* team intro */         
+.thirdpart p12 {
+    position: absolute;
+    left: 20%;
+    top: 40%;
+    padding: 10px;
+    width: 30%;
+    color: #023456;
+    margin: 5px;
+    font-family: 'Helvetica Neue';
+    font-size: 18px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    line-height: 26px;
+}
+
+.thirdpart button {
+    position: absolute;
+    left: 21%;
+    top: 70%;
+    padding: 15px 32px;
+    width: 10%;
+    background-color: #194C7F;
+    border: none;
+    color: white;
+    font-size: 15px;
+}
+
+.thirdpart .teampic {
+    position: absolute;
+    left: 60%;
+    top: 23%;
+    padding: 10px;
+    margin: 5px;
+}
+
+
+/* ----------------------------- fourth part:our partners  ------------------------------ */
+.fourthpart {
+    position: relative;
+}
+                   /* our partner */
+.fourthpart p11 {
+    position: absolute;
+    left: 40%;
+    top: 10%;
+    padding: 10px;
+    width: 80%;
+    color: #023456;
+    margin: 5px;
+    font-family: 'Helvetica Neue';
+    font-size: 24px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: bold;
+    line-height: 26px;
+}
+                   /* partner logo */         
+.fourthpart .WLU {
+    position: absolute;
+    left: 42%;
+    top: 30%;
+    padding: 10px;
+    margin: 5px;
+}
+
+.fourthpart button {
+    position: absolute;
+    left: 43%;
+    top: 70%;
+    padding: 15px 32px;
+    width: 10%;
+    background-color: #194C7F;
+    border: none;
+    color: white;
+    font-size: 15px;
+}
+
+.fourthpart p12 {
+    position: absolute;
+    left: 22%;
+    top: 65%;
+    padding: 10px;
+    width: 80%;
+    color: #023456;
+    margin: 5px;
+    font-family: 'Trebuchet MS';
+    font-size: 18px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 100;
+    line-height: 26px;
+}
+
+/* ----------------------------- fifth part: latest article ------------------------------ */
+.fifthpart {
+    position: relative;
+}
+.fifthpart p11 {
+    position: absolute;
+    left: 20%;
+    top: 10%;
+    padding: 10px;
+    width: 80%;
+    color: #023456;
+    margin: 5px;
+    font-family: 'Trebuchet MS';
+    font-size: 28px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+                   /* latest article title */  
+.fifthpart .newessay a {
+    position: absolute;
+    left: 20%;
+    top: 20%;
+    padding: 10px;
+    width: 30%;
+    color: #023456;
+    margin: 5px;
+    font-family: 'Helvetica Neue';
+    font-size: 18px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    line-height: 26px;
+}
+                   /* latest article date */         
+.fifthpart p12 {
+	position: absolute;
+    left: 20%;
+    top: 25%;
+    padding: 10px;
+    width: 30%;
+    color: darkgrey;
+    margin: 5px;
+    font-family: cursive;
+    font-size: 15px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    line-height: 18px;
+}
+
+.fifthpart .essaypic {
+    position: absolute;
+    left: 20%;
+    top: 30%;
+    padding: 10px;
+    margin: 5px;
+}
+
+.fifthpart .morenews {
+    position: absolute;
+    left: 20%;
+    top: 80%;
+    padding: 10px;
+    width: 30%;
+    color: #023456;
+    margin: 5px;
+    font-family: 'Helvetica Neue';
+    font-size: 18px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    line-height: 26px;
+}
+
+.fifthpart p13 {
+    position: absolute;
+    left: 55%;
+    top: 35%;
+    padding: 10px;
+    width: 30%;
+    font-size: 17px;
+}
+
+
+/* ----------------------------- sixthth part: contact us ------------------------------ */
+.sixthpart {
+    position: relative;
+}
+/*  need more details  */
+.sixthpart p11 {
+    position: absolute;
+    left: 20%;
+    top: 35%;
+    padding: 10px;
+    width: 40%;
+    color: #023456;
+    margin: 5px;
+    font-family: 'Trebuchet MS';
+    font-size: 35px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+
+.sixthpart p12 {
+    position: absolute;
+    left: 20%;
+    top: 50%;
+    padding: 10px;
+    width: 70%;
+    color: darkgrey;
+    margin: 5px;
+    font-family: monaco;
+    font-size: 13px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 16px;
+}
+
+.sixthpart button {
+    position: absolute;
+    left: 72%;
+    top: 40%;
+    padding: 15px 32px;
+    width: 10%;
+    background-color: #194C7F;
+    border: none;
+    color: white;
+    font-size: 15px;
+}
+
+
+/* ----------------------------- seventhth part: footer ------------------------------ */
+.seventhpart {
+    position: relative;
+}
+
+.seventhpart p11 {
+    position: absolute;
+    left: 20%;
+    top: 95%;
+    padding: 10px;
+    width: 50%;
+    color: #023456;
+    margin: 5px;
+    font-family: 'Trebuchet MS';
+    font-size: 15px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.seventhpart .social-icons {
+    position: absolute;
+    top: 20%;
+}
+
+
+
+/* social icons */
+.social-icons {
+    position: relative;
+    float: left;
+    left: 42%;
+}
+
+.social-icons i {
+	width:45px;
+	height:45px;
+	display:inline-block;
+	margin-right: 8px;
+}
+
+i.facebook {
+    background: url('../picture/img-sprite.png') no-repeat 0px 0px;
+	background-position: 0px 0px;
+}
+i.facebook:hover {
+	background-position: 0px -45px;
+    transition:0.5s all;
+	-webkit-transition:0.5s all;
+	-moz-transition:0.5s all;
+	-o-transition:0.5s all;
+	-ms-transition:0.5s all;
+}
+i.twitter {
+    background: url('../picture/img-sprite.png') no-repeat 0px 0px;
+	background-position: -45px 0px;
+}
+i.twitter:hover {
+	background-position: -45px -45px;
+    transition:0.5s all;
+	-webkit-transition:0.5s all;
+	-moz-transition:0.5s all;
+	-o-transition:0.5s all;
+	-ms-transition:0.5s all;
+}
+i.linkedin {
+    background: url('../picture/img-sprite.png') no-repeat 0px 0px;
+	background-position: -90px 0px;
+}
+i.linkedin:hover {
+	background-position: -90px -45px;
+    transition:0.5s all;
+	-webkit-transition:0.5s all;
+	-moz-transition:0.5s all;
+	-o-transition:0.5s all;
+	-ms-transition:0.5s all;
+}

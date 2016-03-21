@@ -1,0 +1,68 @@
+.main-page-content {
+	padding-left:  18%;
+	padding-right: 18%;
+	padding-top: 3%;
+	text-align: middle;
+	font: 140% Open Sans;
+	color: grey;
+	background-color: #F8F8F8;
+}
+
+.newsletter input {
+	padding-right: 0px;
+}
+
+.input-disable > input  
+{
+    display: none;
+}
+
+#upload-image {
+	width: 40px;
+	height: 6%;
+	padding-left: 0px;
+	min-height: 30px;
+	min-width: 20px;
+}
+
+.footer .email {
+	width: 25%;
+}
+
+.main-page-content h4 {
+	font: 90% Open Sans;
+	color: #023456;
+}
+
+#position-text {
+	font: 100% Open Sans;
+}
+
+.circular-image {
+	width: 200px;
+	height: 200px;
+	border-radius: 150px;
+	-webkit-border-radius: 150px;
+	-moz-border-radius: 150px;
+}
+
+.spacer {
+	padding-top: 6%;
+	background-color: #F8F8F8;
+}
+
+input.email {
+	width: 70%;
+}
+	
+@media screen and (min-width:880px) and (min-height:600px) {
+	.main-page-content h4 {
+		font: 110% Open Sans;
+		color: #023456;
+	}
+
+}
+
+.textGrey {
+   color:grey!important;
+}

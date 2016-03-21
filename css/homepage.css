@@ -22,21 +22,28 @@
     position: relative;
     margin-top: 50px;
 }
+
+.firstpart .firstpart-content {
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 30%;
+    text-align: middle; 
+}
                    /* ESIG */
 .firstpart p11 {
     position: absolute;
-    left: 15%;
+    left: 20%;
     top: 30%;
     padding: 10px;
     width: 80%;
     color: white;
     margin: 5px;
     font-family: 'Helvetica Neue';
-    font-size: 65px;
+    font-size: 60px;
     font-style: normal;
     font-variant: normal;
     font-weight: bold;
-    line-height: 26px;
+    line-height: 50px;
 }
                    /* simplified financial planning */
 .firstpart p12 {
@@ -52,14 +59,14 @@
     font-style: normal;
     font-variant: normal;
     font-weight: 500;
-    line-height: 26px;
+    line-height: 40px;
 }
                    /* get started */
 .firstpart button {
     position: absolute;
     left: 45%;
     top: 70%;
-    padding: 15px 32px;
+    padding: 10px 10px;
     width: 10%;
     background-color: #194C7F;
     border: none;
@@ -116,7 +123,7 @@
     position: absolute;
     left: 56%;
     top: 70%;
-    padding: 15px 32px;
+    padding: 10px 10px;
     width: 10%;
     background-color: #194C7F;
     border: none;
@@ -166,7 +173,7 @@
     position: absolute;
     left: 21%;
     top: 70%;
-    padding: 15px 32px;
+    padding: 10px 10px;
     width: 10%;
     background-color: #194C7F;
     border: none;
@@ -212,18 +219,6 @@
     margin: 5px;
 }
 
-.fourthpart button {
-    position: absolute;
-    left: 43%;
-    top: 70%;
-    padding: 15px 32px;
-    width: 10%;
-    background-color: #194C7F;
-    border: none;
-    color: white;
-    font-size: 15px;
-}
-
 .fourthpart p12 {
     position: absolute;
     left: 22%;
@@ -239,6 +234,19 @@
     font-weight: 100;
     line-height: 26px;
 }
+
+.fourthpart button {
+    position: absolute;
+    left: 43%;
+    top: 70%;
+    padding: 10px 10px;
+    width: 10%;
+    background-color: #194C7F;
+    border: none;
+    color: white;
+    font-size: 15px;
+}
+
 
 /* ----------------------------- fifth part: latest article ------------------------------ */
 .fifthpart {
@@ -337,7 +345,7 @@
     left: 20%;
     top: 35%;
     padding: 10px;
-    width: 40%;
+    width: 50%;
     color: #023456;
     margin: 5px;
     font-family: 'Trebuchet MS';
@@ -354,11 +362,11 @@
     left: 20%;
     top: 50%;
     padding: 10px;
-    width: 70%;
+    width: 30%;
     color: darkgrey;
     margin: 5px;
     font-family: monaco;
-    font-size: 13px;
+    font-size: 14px;
     font-style: normal;
     font-variant: normal;
     font-weight: 400;
@@ -369,7 +377,7 @@
     position: absolute;
     left: 72%;
     top: 40%;
-    padding: 15px 32px;
+    padding: 10px 10px;
     width: 10%;
     background-color: #194C7F;
     border: none;

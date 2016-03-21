@@ -1,0 +1,35 @@
+body {
+	font-family: 'Open Sans', sans-serif;
+	background-color: #F8F8F8;
+}
+
+.main-page-content {
+	padding-left:  13%;
+	padding-right: 13%;
+	padding-top: 3%;
+	text-align: middle;
+	background-color: #F8F8F8;
+}
+
+.main-page-content #logo {
+	height: 30%;
+	width: 20%;
+	min-width: 150px;
+	min-height: 150px;
+}
+
+.spacer {
+	padding-top: 4%;
+	background-color: #F8F8F8;
+}
+
+.main-page-content p {
+	font: 150% Open Sans;
+	color: grey;
+}
+	
+@media screen and (min-width:880px) and (min-height:600px) {
+	.main-page-content p {
+		font: 200% Open Sans;
+	}
+}

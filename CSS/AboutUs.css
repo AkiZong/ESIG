@@ -1,0 +1,86 @@
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+.main-page-content {
+	padding-left:  13%;
+	padding-right: 13%;
+	padding-top: 3%;
+	text-align: middle;
+	background-color: #F8F8F8;
+}
+
+.main-page-content h3{
+	font: bold 300% Open Sans;
+}
+
+.main-page-content h4{
+	font: bold 200% Open Sans;
+}
+
+.main-page-content p{
+	font: 160% Open Sans;
+	color: grey;
+}
+
+.main-page-content button {
+	color: grey;
+	width: 20%;
+	height: 5%;
+	background: #fff;
+	font: 100% Open Sans;
+	border-radius: 5px;
+    border: 1px solid grey;
+}
+
+.main-page-content button:hover {
+     background: #965FAC;
+	 color: #F8F8F8;
+}
+
+.main-page-content img{
+	height: 10%;
+	width: 70%;
+}
+
+#seperator {
+	font: bold 400% Open Sans;
+	color: #7AC943;
+	background-color: #F8F8F8;
+	padding-top: 1.5%;
+	padding-bottom: 1.5%;
+}
+
+.spacer {
+	padding-top: 5%;
+	color: #F8F8F8;
+	background-color: #F8F8F8;
+}
+
+#bold-black {
+	color: grey;
+}
+
+#sub-heading {
+	color: black;
+}
+	
+@media screen and (min-width:880px) and (min-height:600px) {
+	.main-page-content h3{
+		font: bold 400% Open Sans;
+	}
+
+	.main-page-content h4{
+		font: bold 250% Open Sans;
+	}
+
+	.main-page-content p{
+		font: 190% Open Sans;
+	}
+}
+
+.teamName {
+ 	color: #01579B;
+	font-size: xx-large;
+        text-align:center;
+}

@@ -1,0 +1,472 @@
+
+body {
+	padding-top: 80px; /* Required padding for .navbar-fixed-top. Change if height of navigation changes. */
+	font-family: 'Open Sans', sans-serif;
+	background-color: #F8F8F8;
+}
+
+textarea {
+	resize: none;
+	border-radius: 10px;
+    border:solid 1px grey;
+}
+
+input:focus, select:focus, textarea:focus, button:focus {
+    outline: none;
+}
+
+br {
+	background-color: #F8F8F8;
+}
+
+.nav {
+	float:right;
+	font: 150% Open Sans;
+	background-color: #F8F8F8;
+}
+
+.spacer {
+	padding-top: 4%;
+	background-color: #F8F8F8;
+}
+
+.logo {
+	height: 150%;
+	width: 250px;
+}
+
+@media(max-width:380px) {
+	.logo {
+		width: 160px;
+	}
+}
+
+.navbar-fixed-top .nav {
+    padding: 15px 0;
+}
+
+.navbar-fixed-top .navbar-brand {
+    padding: 15px 15px;
+	float: left;
+}
+
+.navbar-default {
+    border-color: rgba(34,34,34,.05);
+    font-family: Open Sans;
+    background-color: #F8F8F8;
+    -webkit-transition: all .35s;
+    -moz-transition: all .35s;
+    transition: all .35s;
+}
+
+.navbar-default .navbar-header .navbar-brand {
+    text-transform: uppercase;
+    font-family: Open Sans;
+    font-weight: 700;
+    color: #f05f40;
+}
+
+.navbar-default .navbar-header .navbar-brand:hover,
+.navbar-default .navbar-header .navbar-brand:focus {
+    color: #eb3812;
+}
+
+.navbar-default .nav > li>a,
+.navbar-default .nav>li>a:focus {
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 700;
+    color: #01579B;
+}
+
+.navbar-default .nav > li>a:hover,
+.navbar-default .nav>li>a:focus:hover {
+    color: #023456;
+}
+
+.navbar-default .nav > li.active>a,
+.navbar-default .nav>li.active>a:focus {
+    color: #023456!important;
+    background-image: url("../Images/green_dot.png");
+	background-position: 0% 50%;
+	background-repeat: no-repeat;
+	background-size: 10px 10px;
+    background-color: transparent;
+}
+
+.navbar-default .nav > li.active>a:hover,
+.navbar-default .nav>li.active>a:focus:hover {
+    background-color: transparent;
+}
+
+@media(min-width:768px) {
+    .navbar-default {
+        background-color: #F8F8F8;
+    }
+
+    .navbar-default .navbar-header .navbar-brand {
+        color: rgba(255,255,255,.7);
+    }
+
+    .navbar-default .navbar-header .navbar-brand:hover,
+    .navbar-default .navbar-header .navbar-brand:focus {
+        color: #F8F8F8;
+    }
+
+    .navbar-default .nav > li>a,
+    .navbar-default .nav>li>a:focus {
+		color: #01579B;
+    }
+
+    .navbar-default .nav > li>a:hover,
+    .navbar-default .nav>li>a:focus:hover {
+        color: #023456;
+    }
+
+    .navbar-default.affix {
+        border-color: rgba(34,34,34,.05);
+        background-color: #F8F8F8;
+    }
+
+    .navbar-default.affix .navbar-header .navbar-brand {
+        font-size: 14px;
+        color: #f05f40;
+    }
+
+    .navbar-default.affix .navbar-header .navbar-brand:hover,
+    .navbar-default.affix .navbar-header .navbar-brand:focus {
+        color: #eb3812;
+    }
+
+    .navbar-default.affix .nav > li>a,
+    .navbar-default.affix .nav>li>a:focus {
+        color: #222;
+    }
+
+    .navbar-default.affix .nav > li>a:hover,
+    .navbar-default.affix .nav>li>a:focus:hover {
+        color: #f05f40;
+    }
+	
+	.navbar-default .nav > li.active>a,
+	.navbar-default .nav>li.active>a:focus {
+		color: #023456!important;
+		background-image: url("../Images/green_dot.png");
+		background-position: 50% 100%;
+		background-repeat: no-repeat;
+		background-size: 10px 10px;
+		background-color: transparent;
+	}
+	.logo {
+		height: 220%;
+	}
+}
+
+input
+{
+	-moz-border-radius: 15px;
+	border-radius: 10px;
+    border:solid 1px grey;
+	padding-left: 1%;
+}
+
+.bg-primary {
+    background-color: blue;
+}
+
+.text-faded {
+    color: rgba(255,255,255,.7);
+}
+
+.main-page-content {
+	padding-left:  15%;
+	padding-right: 15%;
+	background-color: #F8F8F8;
+}
+
+.main-page-content h3{
+	font: 200% Open Sans;
+	color: #023456;
+}
+
+.main-page-content p {
+	font: 130% Open Sans;
+}
+
+.main-page-content b {
+ color: #023456;
+}
+
+.main-page-content input {
+	width: 85%;
+	height: 40px;
+	margin-bottom: 2%;
+}
+
+.main-page-content textarea {
+	width: 85%;
+	height: 120px;
+	margin-bottom: 2%;
+}
+
+.main-page-content .send-message {
+	color: #ECF0F1;
+	background-color: #01579B;
+	width: 50%;
+	height: 40px;
+	text-align: middle;
+	min-width: 120px;
+}
+
+.banner {
+    position: relative;
+    max-width: 100%;
+	overflow: hidden;
+}
+
+.banner .bannercaption {
+    text-align: center; 
+    width:100%; height:0;
+    font-size: 25px; line-height: 0;
+    color:white;
+    position:absolute; top:21%;
+    z-index:1;
+}
+
+.banner img {
+	position:relative;
+	background-color: #01579B; 
+	width: 100%;
+	height: 35%;
+	text-align: middle;
+	display:block;
+	max-width: 100%;
+}
+	
+.banner .bannercaption h1 {
+	font: bold 160% Open Sans;
+	color: #F8F8F8;
+	line-height: 75%;
+}
+
+.banner .bannercaption h2 {
+	font: 80% Open Sans;
+	color: #F8F8F8;
+}
+
+.banner .bannercaption p {
+	font: bold 160% Open Sans;
+	color: #7AC943;
+	line-height: 75%;
+}
+
+.newsletter {
+	background-color: #01579B;
+	background: url(../Images/bottom-banner.jpg);
+	padding-bottom: 4.5%;
+	padding-top: 4.5%;
+}
+
+.newsletter h2 {
+	font: 180% Open Sans;
+	color: #7AC943;
+	padding-top: 5px;
+	padding-bottom: 0px;
+	position: relative;
+}
+
+.newsletter p {
+	font: 100% Open Sans;
+	padding-left: 	30%;
+	padding-right: 	30%;
+	color: #ECF0F1;
+}
+
+input.email {
+	color: #95A5A6;
+	width: 30%;
+	height: 40px;
+	padding-left: 1%;
+	min-width: 150px;
+}
+
+input.subscribe {
+	color: #ECF0F1;
+	background-color: #7AC943;
+	width: 15%;
+	height: 40px;
+	min-width: 110px;
+}
+		
+.footer-contents {
+	font: italic 50% Open Sans;
+	padding-top: 1%;
+	bottom: 1%;
+}
+
+.footer-contents img {
+	height: 75px;
+	width: 75px;
+	float: right;
+}
+
+.footer {
+	position: relative;
+	bottom: 1%;
+	background-color: #F8F8F8;
+}
+
+footer span.copyright {
+    line-height: 20px;
+	padding-left: 5%;
+}
+
+ul.social-buttons {
+	float: right;
+}
+
+ul.social-buttons img {
+	width: 20px;
+	height: 20px;
+}
+
+ul.social-buttons li a {
+    display: block;
+    border-radius: 100%;
+    font-size: 20px;
+    line-height: 40px;
+    outline: 0;
+    color: #fff;
+    background-color: #222;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    transition: all .3s;
+}
+
+ul.social-buttons li a:hover,
+ul.social-buttons li a:focus,
+ul.social-buttons li a:active {
+    background-color: #01579B;
+}
+
+@media screen and (min-height:380px)
+{
+	.banner img {
+		position:relative;
+		background-color: #01579B; 
+		width: 100%;
+		height: 40%;
+		text-align: middle;
+		display:block;
+		max-width: 100%;
+	}
+	
+	ul.social-buttons {
+		margin: 0 20% 0 20%;
+	}
+}	
+@media screen and (min-height:440px) and (min-width:100px)
+{
+	
+	.banner img {
+		height: 50%;
+	}
+		
+	.footer-contents {
+		font: italic 70% Open Sans;
+	}
+	
+	ul.social-buttons {
+		margin: 0 20% 0 20%;
+	}
+}
+@media screen and (min-width:400px) and (min-height:450px) {
+	.banner .bannercaption h1 {
+		font: bold 240% Open Sans;
+		color: #F8F8F8;
+		line-height: 75%;
+	}
+	.banner .bannercaption h2 {
+		font: 80% Open Sans;
+		color: #F8F8F8;
+	}
+	.banner .bannercaption p {
+		font: bold 160% Open Sans;
+		color: #7AC943;
+		line-height: 75%;
+	}
+	
+	.main-page-content h3{
+	font: 200% Open Sans;
+	color: #023456;
+	}
+
+	.main-page-content p {
+		font: 130% Open Sans;
+	}
+	.newsletter h2 {
+		font: 200% Open Sans;
+	}
+
+	.newsletter p {
+		font: 100% Open Sans;
+	}
+	
+	.banner img {
+		height: 60%;
+	}
+	
+	.footer-contents {
+		font: italic 90% Open Sans;
+	}
+	
+	ul.social-buttons {
+		margin: 0 30% 0 30%;
+	}
+}
+@media screen and (min-width:880px) and (min-height:600px) {
+	.banner .bannercaption h1 {
+		font: bold 300% Open Sans;
+		color: #F8F8F8;
+		line-height: 75%;
+	}
+	.banner .bannercaption h2 {
+		font: 150% Open Sans;
+		color: #F8F8F8;
+	}
+	.banner .bannercaption p {
+		font: bold 300% Open Sans;
+		color: #7AC943;
+		line-height: 75%;
+	}
+	
+	.newsletter h2 {
+		font: 300% Open Sans;
+	}
+
+	.newsletter p {
+		font: 190% Open Sans;
+	}
+
+	.main-page-content h3{
+	font: 270% Open Sans;
+	color: #023456;
+	}
+
+	.main-page-content p {
+		font: 150% Open Sans;
+	}
+	.banner img {
+		height: 70%;
+	}
+	
+	.footer-contents {
+		font: italic 110% Open Sans;
+	}
+	
+	ul.social-buttons {
+		float: right;
+		padding-right: 10%;
+		margin: 0px 0px 0px 0px;
+	}
+}

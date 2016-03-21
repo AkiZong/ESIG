@@ -1,0 +1,278 @@
+<html>
+	<head>
+ 		<base href="http://emergingstar.ca" />
+		<?php
+		    require('./wp-blog-header.php');
+		    header("Content-type: text/html; charset=iso-8859-1");
+			
+			// Include database connection and functions here.
+			include_once '../External PHP/db_connect.php';
+		?>
+		
+		<META http-equiv="Content-type" content="text/html; charset=iso-8859-1">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+		<link href="./CSS/Main_Template.css" rel="stylesheet" type="text/css" />
+		<link href="./CSS/blog.css" rel="stylesheet" type="text/css" />
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js" async></script>
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js" async></script>
+		<script async>
+		function enter_email()
+		{
+			var email = document.getElementById("email").value;
+			
+			if(email == null || email == "" || email.length == 0)
+			{
+				alert("An Email Address was not entered!");
+				return;
+			}
+
+			var xmlhttp=new XMLHttpRequest();
+			xmlhttp.onreadystatechange=function() {
+				if (xmlhttp.readyState==4 && xmlhttp.status==200) {
+					alert(xmlhttp.responseText);
+				}
+			}
+			xmlhttp.open("GET","../External PHP/submit_email.php?email="+email,true);
+			xmlhttp.send();
+		}
+		</script>	
+	</head>
+	<body>
+	
+	<div class="header row-fluid">
+	    <!-- Navigation -->
+		<nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+			<div class="container-fluid">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="./home.php">
+						<img src="./Images/EmergingStar_RGB_logo.png" class="logo">
+					</a>
+				</div>
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav navbar-right">
+						<li>
+							<a href="./home.php">Home</a>
+						</li>
+						<li>
+							<a href="./AboutUs.php">About us</a>
+						</li>
+						<li>
+							<a href="./partners.php">Partners</a>
+						</li>
+						<li>
+							<a href="./E-Books.php">Digital Resources</a>
+						</li>
+						<li class="active">
+							<a href="./blog">Blog</a>
+						</li>
+						<li>
+							<a href="./ContactUs.php">Contact</a>
+						</li>
+					</ul>
+				</div>
+				<!-- /.navbar-collapse -->
+			</div>
+			<!-- /.container -->
+		</nav>	
+		<div class="banner">
+			<img src="./Images/blog-banner.png">
+			<div class="bannercaption"><h1>Blog</h1><h2>Providing tips, best practices and research <br>to grow your wealth</h2><p>***</p></div>
+		</div>
+	</div>
+	
+	<div class="spacer"></div>
+	<div class="container-fluid" id="color-background">
+		<div class="main-page-content">
+			<p>Everyone should have access to winning financial advice. Our blog provides tips, best practices
+			and research on fintech trends.</p>
+			<?php
+			
+				$query_date = 'SELECT date_updated FROM posts ORDER BY date_updated DESC LIMIT 1';
+				$STH = $DBH->query($query_date);
+				
+				$STH->setFetchMode(PDO::FETCH_ASSOC);
+				
+				$date_updated = $STH->fetch();
+				
+				//echo '<h5>Last post on '. date("F jS Y", strtotime($date_updated['date_updated'])) .'</h5>';
+			?>
+			<div id="content">
+				<div class="show-in-content">
+					<form method="get" class="sfm">
+						<input type="text" name="search" placeholder="Search" id="sf"/>
+						<input type="image" src="./Images/icon-search.png" id="sb"/>
+					</form>
+					<h5>Mortgages</h5>|<h5>Demographics</h5>|<h5>Energy & Commodities</h5>|<h5>Bubbles</h5>|<h5>AI</h5>|<h5>China AI</h5>|<h5>ETFs</h5>|<h5>MFs</h5>|<h5>Emerging Growth Economies</h5>|<h5>Equity</h5>|<h5>Fintech Trends</h5>
+				</div>	
+<?php 
+if (have_posts()) : 
+if (($wp_query->post_count) > 1) : 
+$posts = get_posts('numberposts=10&order=DESC&orderby=post_date');
+foreach ($posts as $post) : setup_postdata( $post ); ?>
+
+<?php the_date('','<h2>','</h2>'); ?>
+	
+<div class="post" id="post-<?php the_ID(); ?>">
+	 <h3 class="storytitle"><a href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a></h3>
+	<div class="meta"><?php _e("Filed under:"); ?> <?php the_category(',') ?> &#8212; <?php the_author() ?> @ <?php the_time() ?> <?php edit_post_link(__('Edit This')); ?></div>
+	
+	<div class="storycontent">
+		<?php the_excerpt(__('(more...)')); ?>
+	</div>
+	
+	<div class="feedback">
+            <?php wp_link_pages(); ?>
+            <!--<?php comments_popup_link(__('Comments (0)'), __('Comments (1)'), __('Comments (%)')); ?>-->
+	</div>
+
+</div>
+
+<?php comments_template(); // Get wp-comments.php template ?>
+
+
+<?php endforeach;else: the_post();?>
+<?php the_date('','<h2>','</h2>'); ?>
+	
+<div class="post" id="post-<?php the_ID(); ?>">
+	 <h3 class="storytitle"><a href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a></h3>
+	<div class="meta"><?php _e("Filed under:"); ?> <?php the_category(',') ?> &#8212; <?php the_author() ?> @ <?php the_time() ?> <?php edit_post_link(__('Edit This')); ?></div>
+	
+	<div class="storycontent">
+		<?php the_content(); ?>
+	</div>
+	
+	<div class="feedback">
+            <?php wp_link_pages(); ?>
+            <!--<?php comments_popup_link(__('Comments (0)'), __('Comments (1)'), __('Comments (%)')); ?>-->
+        </div>
+</div>
+<?php endif; else: ?>
+<p><?php _e('Sorry, no posts matched your criteria.'); ?></p>
+<?php endif; ?>
+			</div>
+			<div class="main-body-space"></div>
+			<div id="sidebar">	
+<!-- begin sidebar -->
+<div id="menu">
+
+<ul class="rightList">
+<?php wp_list_pages(); ?>
+<?php get_links_list(); ?>
+<li id="categories"><?php _e('Categories:'); ?>
+<ul>
+<?php wp_list_categories('title_li='); ?>
+</ul>
+</li>
+<li id="search">
+<form id="searchform" method="get" action="<?php echo $_SERVER['PHP_SELF']; ?>">
+<div>
+<input type="text" name="s" id="s" size="15" placeholder="Search" class="searchBox"/>
+<!--<input type="submit" value="<?php _e('Search'); ?>" />-->
+<input type="submit" src="./Images/icon-search.png" id="sb" class="searchButton" value="" />
+</div>
+</form>
+</li>
+<li id="archives"><?php _e('Archives:'); ?>
+<ul>
+<?php wp_get_archives('type=monthly'); ?>
+</ul>
+</li>
+</li>
+
+</ul>
+
+</div>
+<!-- end sidebar -->
+				<!--<div class="show-in-sidebar">
+					<form method="get" class="sfm">
+						<input type="text" name="search" placeholder="Search" id="sf"/>
+						<input type="image" src="./Images/icon-search.png" id="sb"/>
+					</form>
+					
+					<div class="space"></div>
+									
+					<h4>Categories</h4>
+					<hr><h5>Mortgages<p id="right">0</p></h5><hr><h5>Demographics<p id="right">0</p></h5><hr><h5>Energy & Commodities<p id="right">0</p></h5><hr><h5>Bubbles<p id="right">0</p></h5><hr><h5>AI<p id="right">0</p></h5><hr><h5>China AI<p id="right">0</p></h5><hr><h5>ETFs<p id="right">0</p></h5><hr><h5>MFs<p id="right">0</p></h5><hr><h5>Emerging Growth Economies<p id="right">0</p></h5><hr><h5>Equity<p id="right">0</p></h5><hr><h5>Fintech Trends<p id="right">0</p></h5><hr>
+					
+					<div class="space"></div>
+				</div>	
+				
+				<?php
+					
+					$recent_post = 'SELECT id, post_title, LEFT(post_content, 65) As post_content, date_created FROM posts WHERE status = 1 GROUP BY date_created DESC LIMIT 2';
+
+					$STH5 = $DBH->query($recent_post);
+					
+					$STH5->setFetchMode(PDO::FETCH_ASSOC);
+				
+					$posts = $STH5->fetchAll();
+					
+					echo '<h4>Recent Posts</h4>';
+					
+					foreach($posts as $post) {
+						echo '<b><a href="./blog2.php?post='.$post['id'].'#content"><h6>'.$post['post_title'].'</h6></a></b>';
+						echo '<p id="small-text">'.$post['post_content'].'</p>';
+					}					
+				?>
+				
+				<div class="space"></div>
+				
+				<h4>Tags</h4>
+				<button>ETF</button><button>RRSP</button><button>TFSA</button><button class="large-tag">Equity</button>
+				
+				<div class="space"></div>
+				
+				<h4>E-Books</h4>
+				<img src="./Images/ESIG-Book.jpg" class="new-book">
+				<img src="./Images/ESIG-Book.jpg" class="new-book">-->				
+			</div>
+		</div>
+	</div>
+	<div class="spacer"></div>
+	
+	<div class="footer row-fluid">
+		<section class="newsletter" id="about">
+			<div class="container-fluid">
+				<div class="row-fluid text-center">
+					<h2>Join our newsletter</h2>
+					<p>Enter your email address to subscribe to our
+					newsletter and receive insightful and relative
+					information to help you succeed with your investments!</p><br>
+					<!--<form id="newsletter" action="" method="post">-->
+						<input type="text" class="email" name="email" id="email" placeholder="Enter email address" /><br><br>
+						<input type="submit" class="subscribe" name="submit" value="Subscribe" onclick="enter_email()" />
+					<!--</form>-->
+				</div>
+			</div>
+		</section>
+		<footer>
+		  <div class="container-fluid">
+			<div class="footer-contents">
+				<div class="row-fluid">
+					<div class="col-sm-6">
+						<span class="copyright">All rights reserved by Emerging Star Investment Group Inc.</span>
+					</div>
+					<div class="col-sm-6">
+						<ul class="list-inline social-buttons">
+							<li><a href="https://www.linkedin.com/company/emerging-star-investment-group"><img src="./Images/icon-linkedin.png"></a></li>
+							<li><a href="#"><img src="./Images/icon-twitter.png"></a></li>
+							<li><a href="https://plus.google.com/104991614544733277307/about"><img src="./Images/icon-google+.png"></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		  </div>
+		</footer>
+	</div>
+	</body>
+</html>

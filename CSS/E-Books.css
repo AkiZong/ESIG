@@ -1,0 +1,410 @@
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+.spacer {
+	padding-top: 4%;
+	background-color: #F8F8F8;
+}
+
+.main-page-content {
+	padding-left: 8%;
+	padding-right: 8%;
+	font: 140% Open Sans;
+	color: grey;
+	background-color: #F8F8F8;
+}
+
+#content {
+	float: left;	
+	width: 70%;
+	padding-right: 2%;
+	background-color: #F8F8F8;
+}
+
+#sidebar {
+	float: right;
+	width: 30%;
+	padding-left: 3%;	
+	background-color: #F8F8F8;
+}
+
+.show-in-content {
+	display: none;
+}
+
+.show-in-sidebar {
+	display: block;
+}
+
+#sidebar .main-image {
+	height: 25%;
+	width: 80%;
+}
+
+#sidebar button {
+	width: 30%;
+	height: 5%;
+	background-color: white;
+	color:grey;
+	margin-right: 2%;
+	border-radius: 5px;
+    border: 1px solid grey;
+	margin-top: 1%;
+	min-height: 50px;
+	min-width: 50px;
+}
+
+#sidebar .large-tag {
+	width: 40%;
+}
+
+#sidebar .space {
+	padding-top: 8%;
+}
+
+#sidebar .add {
+	background-image: url(../Images/add.jpg);
+	background-size: cover;
+	width: 10%;
+	padding-top: 3.5%;
+}
+
+.sfm input {
+	background-color: #fff; 
+    font-size: 26px; 
+    border: 0px; 
+    margin-top: 0px; 
+    color: grey; 
+    letter-spacing: 1px; 
+    padding: 4px 8px;
+    font-family: 100% Open Sans;
+	width: 80%;
+	height: 5.5%;
+	min-width: 10px;
+	min-height: 50px;
+}
+	
+#sb {
+	height: 5.5%; 
+	width: 15%; 
+	vertical-align: top;
+	min-width: 35px;
+	min-height: 50px;
+}
+
+.book-title {
+	font: 120% Open Sans;
+	color: #023456;
+}
+
+h4 {
+	padding-top: 0px;
+	font: 130% Open Sans;
+	color: #023456;
+}
+
+h5 {
+	font: 80% Open Sans;
+	color: #01579B;
+}
+
+h6 {
+	font: 70% Open Sans;
+	color: #grey;
+}
+
+#right {
+	font: 90% Open Sans;
+	color: grey;
+	float: right;
+}
+#small-text {
+	font: 70% Open Sans;
+	color: grey;
+}
+
+.mobile_show {
+	display:none;
+}
+	
+.new-book {
+	height: 30%;
+	width: 45%;
+	min-height: 140px;
+	min-width: 50px;
+}
+
+.books-img {
+	height: 45%;
+	width: 90%;
+	min-height: 200px;
+}
+
+.books-img img:hover {
+}
+
+#tweet {
+	height: 15%;
+	width: 95%;
+	min-height: 100px;
+	min-width: 100px;
+}
+
+.main-body-space {
+	padding-top: 5%;
+}
+
+#color-background {
+	background-color: #F8F8F8;
+}
+
+#fade{
+    display: none;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    z-index:1001;
+    -moz-opacity: 0.7;
+    opacity:.70;
+    filter: alpha(opacity=70);
+}
+
+#light{
+    display: none;
+    position: fixed;
+	width: 85%;
+	height: 90%; 
+	left: 5%;
+	top: 5%;
+	text-align: center;
+	color: white;
+    background: #CCC;
+    z-index:1002;
+    overflow:visible;
+	background: url(../Images/Newsletter-image.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	padding-top: 3%;
+	padding-bottom: 3%;
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+#light #exit {
+	float: right;
+	font-size: 90%;
+}
+
+#light #form-title {
+	font-size: 120%;
+}
+
+#light #form-text {
+	font-size: 80%
+}
+	
+#light p {
+	font-size: 90%;
+}
+
+#light #form-newsletter {
+	font-size: 180%;
+	margin-top: 5%;
+	margin-bottom: 5%;
+}
+
+#light #error {
+	font-size: 90%;
+	color: yellow;
+}
+
+#light #form-email {
+	font: 200%;
+	height: 13%;
+	width: 50%;
+	min-height: 15px;
+	min-width: 150px;
+	color: grey;
+}
+
+#light #form-subscribe {
+	font: 200%;
+	height: 13%;
+	width: 30%;
+	margin-left: 2%;
+	min-height: 5px;
+	min-width: 100px;
+	background-color: #7AC943;
+}
+
+@media(max-width:600px) {
+	#sidebar {
+		width: 100%;
+		float: middle;
+	}
+	
+	#content {
+		width: 100%;
+		float: middle;
+	}
+	
+	#sidebar .main-image {
+		display: none;
+	}
+	
+	.sfm input {
+		font: 80% Open Sans;
+		width: 80%;
+	}
+	
+	#sb  {
+		height: 4%; 
+		width: 10%; 
+	}
+	
+	.show-in-content h5 {
+		font: 60% Open Sans;
+		display: inline-block;
+		margin-left: 1px;
+		line-height:0%;
+	}
+	.show-in-content {
+		display: block;
+	}
+
+	.show-in-sidebar {
+		display: none;
+	}
+}
+
+@media screen and (min-height:440px) and (min-width:100px)
+{	
+	#light{
+		width: 85%;
+		height: 90%; 
+		left: 5%;
+		top: 5%;
+	}
+	
+	#light #exit {
+		font-size: 100%;
+	}
+
+	#light #form-title {
+		font-size: 150%;
+	}
+	
+	#light #form-text {
+		font-size: 90%
+	}
+	
+	#light p {
+		font-size: 100%;
+	}
+	
+	#light #error {
+		font-size: 100%;
+	}
+}
+@media screen and (min-width:400px) and (min-height:450px) {
+	
+	#light{
+		width: 80%;
+		height: 85%; 
+		left: 10%;
+		top: 10%;
+	}
+
+	#light #exit {
+		font-size: 100%;
+	}
+
+	#light #form-title {
+		font-size: 200%;
+	}
+	
+	#light #form-text {
+		font-size: 110%
+	}
+	
+	#light p {
+		font-size: 120%;
+	}
+	
+	#light #error {
+		font-size: 120%;
+	}
+}
+@media screen and (min-width:880px) and (min-height:600px) {
+	.book-title {
+		font: 140% Open Sans;
+	}
+	h4 {
+		font: 150% Open Sans;
+	}
+
+	h5 {
+		font: 90% Open Sans;
+	}
+
+	h6 {
+		font: 80% Open Sans;
+	}
+	
+	#light{
+		width: 70%;
+		height: 75%;
+		left: 10%;	
+		top: 10%;
+	}
+	#light #exit {
+		font-size: 120%;
+	}
+
+	#light #form-title {
+		font-size: 300%;
+	}
+	
+	#light #form-text {
+		font-size: 160%
+	}
+	
+	#light p {
+		font-size: 180%;
+	}
+	
+	#light #error {
+		font-size: 180%;
+	}
+	
+	.mobile_show {
+		display:inline;
+	}
+}
+
+.bookBlock {
+    background-color: #0A3555;
+    height: 200px;
+    width: 211px;
+    display: inline-block;
+    color: white;
+    padding: 30px 10px;
+    position:absolute;
+}
+
+a.bookBlock:hover {
+    background-color: #71BC4E;
+    color: white;
+    text-decoration: none;
+}
+
+.bookAuthor {
+    position: absolute;
+    bottom: 10px;
+    font-size:small;
+}
+
